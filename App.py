@@ -8,13 +8,13 @@ import joblib
 @st.cache_resource
 def load_artifacts():
     # Load core model structures
-    model = joblib.load(r"C:\Users\rosha\Desktop\ds\project roshaan\model.pkl")
-    feature_columns = joblib.load(r"C:\Users\rosha\Desktop\ds\project roshaan\feature_columns.pkl")
-    numerical_features = joblib.load(r"C:\Users\rosha\Desktop\ds\project roshaan\numerical_features.pkl")
-    categorical_features = joblib.load(r"C:\Users\rosha\Desktop\ds\project roshaan\categorical_features.pkl")
+    model = joblib.load("model.pkl")
+    feature_columns = joblib.load("feature_columns.pkl")
+    numerical_features = joblib.load("numerical_features.pkl")
+    categorical_features = joblib.load("categorical_features.pkl")
     
     # Load the scaler object saved by joblib
-    scaler = joblib.load(r"C:\Users\rosha\Desktop\ds\project roshaan\scaler.pkl")
+    scaler = joblib.load("scaler.pkl")
     
     # Safety Check: Validate if the loaded scaler object is properly fitted
     from sklearn.utils.validation import check_is_fitted
