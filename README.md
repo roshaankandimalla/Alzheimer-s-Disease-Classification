@@ -4,6 +4,10 @@ A machine learning project for classifying Alzheimer's disease diagnosis using p
 
 This project includes exploratory data analysis, preprocessing, model training, model comparison, and evaluation using multiple supervised machine learning algorithms.
 
+## Live App
+
+Try the deployed Streamlit application here: [NeuroScan Alzheimer's Disease Classifier](https://nueroscan.streamlit.app/)
+
 ## Project Overview
 
 Alzheimer's disease is a progressive neurological disorder that affects memory, thinking, and daily functioning. This project uses structured patient data to build classification models that predict whether a patient is diagnosed with Alzheimer's disease.
@@ -20,6 +24,7 @@ Alzheimer-s-Disease-Classification/
 |-- Alzheimer's_ (1).ipynb
 |-- Alzheimer's_models.ipynb
 |-- alzheimers_disease_data (1).csv
+|-- requirements.txt
 `-- README.md
 ```
 
@@ -114,6 +119,7 @@ The best-performing model in this project was **LightGBM**, with a testing accur
 ## Tech Stack
 
 - Python
+- Streamlit
 - Pandas
 - NumPy
 - Matplotlib
@@ -136,7 +142,7 @@ cd Alzheimer-s-Disease-Classification
 2. Install dependencies:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost lightgbm joblib notebook
+pip install -r requirements.txt
 ```
 
 3. Start Jupyter Notebook:
@@ -162,12 +168,7 @@ jupyter notebook
 
 ## Future Improvements
 
-- Add hyperparameter tuning using GridSearchCV or RandomizedSearchCV
-- Handle class imbalance with SMOTE or class weighting
-- Save the best model as a reusable `.pkl` or `.joblib` file
-- Build a Streamlit web app for prediction
 - Add model explainability using SHAP or LIME
-- Add a `requirements.txt` file for easier setup
 
 ## Author
 
