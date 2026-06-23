@@ -39,7 +39,8 @@ model, scaler, feature_columns, numerical_features, categorical_features = load_
 # ----------------------------
 # 2. UI THEME & STYLING LAYER
 # ----------------------------
-st.set_page_config(page_title=" 🧠 Neuro Scan Pro", layout="wide")
+st.set_page_config(page_title="Neuro Scan Pro",page_icon="🧠",
+                   layout="wide")
 
 st.markdown("""
     <style>
@@ -125,7 +126,7 @@ with st.form("clinical_form"):
         user_inputs['CholesterolTriglycerides'] = st.number_input("Triglycerides (50-400)", 50.0, 400.0, 210.57, format="%.2f")
 
     with col3:
-        st.markdown('<div class="section-header">🧠 Lifestyle & Cognitive</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-header">🚶🏻‍♀️ Lifestyle & Cognitive</div>', unsafe_allow_html=True)
         user_inputs['MMSE'] = st.number_input("MMSE Score (0-30)", 0.0, 30.0, 10.1, format="%.1f")
         user_inputs['ADL'] = st.number_input("ADL Score (0-10)", 0.0, 10.0, 4.5, format="%.1f")
         user_inputs['FunctionalAssessment'] = st.number_input("Functional Assessment (0-10)", 0.0, 10.0, 3.4, format="%.1f")
