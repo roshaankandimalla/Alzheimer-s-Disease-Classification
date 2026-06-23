@@ -39,7 +39,7 @@ model, scaler, feature_columns, numerical_features, categorical_features = load_
 # ----------------------------
 # 2. UI THEME & STYLING LAYER
 # ----------------------------
-st.set_page_config(page_title="NeuroScan Pro", layout="wide")
+st.set_page_config(page_title=" 🧠 Neuro Scan Pro", layout="wide")
 
 st.markdown("""
     <style>
